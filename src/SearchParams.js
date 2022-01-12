@@ -50,7 +50,9 @@ const SearchParams = () => {
             onChange={(e) => setAnimal(e.target.value)}
             onBlur={(e) => setAnimal(e.target.value)}
           >
-            <option />
+            <option value='' selected disabled hidden>
+              Choose an animal
+            </option>
             {ANIMALS.map((animal) => (
               <option key={animal} value={animal}>
                 {animal}
@@ -66,7 +68,9 @@ const SearchParams = () => {
             onChange={(e) => setBreed(e.target.value)}
             onBlur={(e) => setBreed(e.target.value)}
           >
-            <option />
+            <option value='' selected disabled hidden>
+              Choose a breed
+            </option>
             {breeds.map((breed) => (
               <option key={breed} value={breed}>
                 {breed}
@@ -74,7 +78,9 @@ const SearchParams = () => {
             ))}
           </select>
         </label>
-        <button>Submit</button>
+        <div className='center-button'>
+          <button>Submit</button>
+        </div>
       </form>
       <Results pets={pets} />
     </div>

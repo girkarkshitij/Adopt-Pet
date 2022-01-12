@@ -1,18 +1,88 @@
-html,
-body,
-div {
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap');
+
+:root {
+  --light: #e8eaf6;
+  --medium: #4757ff;
+  --dark: #1b278d;
+}
+
+* {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+  box-sizing: border-box;
 }
 
 body {
-  line-height: 1;
+  font-size: 100%;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  background-color: var(--light);
 }
 
 a {
   text-decoration: none;
+}
+
+/* Texts */
+h1 {
+  font-size: 10vw;
+}
+
+.title {
+  color: var(--dark);
+  padding: 10px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 6vw;
+  color: var(--medium);
+}
+
+/* Container */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* Images */
+img {
+  width: 50px;
+}
+
+/* Form */
+form {
+  background-color: var(--medium);
+  border: solid 5px var(--dark);
+  border-radius: 3vw;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  color: var(--light);
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+input {
+  width: 100%;
+  margin-top: 10px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.center-button {
+  text-align: center;
+}
+
+button {
+  border: solid 2px var(--dark);
+  border-radius: 3vw;
+  font: inherit;
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 5px;
+  margin-top: 10px;
 }
