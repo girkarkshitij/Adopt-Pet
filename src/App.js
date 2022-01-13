@@ -6,9 +6,9 @@ import {
   Switch,
   Link,
 } from 'react-router-dom/cjs/react-router-dom.min';
-import SearchParams from './SearchParams';
-import Details from './Details';
-import Footer from './Footer';
+import SearchParams from './components/SearchParams';
+import Details from './components/Details';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
