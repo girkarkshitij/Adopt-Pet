@@ -8,25 +8,29 @@ import {
 } from 'react-router-dom/cjs/react-router-dom.min';
 import SearchParams from './SearchParams';
 import Details from './Details';
+import Footer from './Footer';
 
 const App = () => {
   return (
-    <div className='container'>
-      <Router>
-        <header>
-          <Link to='/'>
-            <h1 className='title'>Adopt Me!</h1>
-          </Link>
-        </header>
-        <Switch>
-          <Route path='/details/:id'>
-            <Details />
-          </Route>
-          <Route path='/'>
-            <SearchParams />
-          </Route>
-        </Switch>
-      </Router>
+    <div>
+      <div className='container'>
+        <Router>
+          <header>
+            <Link to='/'>
+              <h1 className='title'>Adopt Me!</h1>
+            </Link>
+          </header>
+          <Switch>
+            <Route path='/details/:id'>
+              <Details />
+            </Route>
+            <Route path='/'>
+              <SearchParams />
+            </Route>
+          </Switch>
+        </Router>
+      </div>
+      <Footer />
     </div>
   );
 };

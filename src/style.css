@@ -108,3 +108,16 @@ button {
   padding: 5px;
   margin-top: 10px;
 }
+
+/* Footer */
+footer ul {
+  background-color: var(--medium);
+  list-style: none;
+  text-align: center;
+  color: var(--light);
+  padding: 10px;
+}
+
+footer li {
+  font-size: 3vw;
+}
