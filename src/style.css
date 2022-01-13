@@ -35,8 +35,11 @@ h1 {
 }
 
 h2 {
-  font-size: 6vw;
-  color: var(--medium);
+  font-size: 7vw;
+}
+
+h3 {
+  font-size: 4vw;
 }
 
 /* Container */
@@ -45,16 +48,35 @@ h2 {
   margin: 0 auto;
 }
 
-/* Images */
+/* Images of pet*/
+.pet-container {
+  background-color: var(--dark);
+  margin-bottom: 20px;
+}
+
 img {
-  width: 50px;
+  width: 100%;
+  height: auto;
+  background-color: var(--dark);
+  border: solid 10px var(--dark);
+  border-radius: 50px;
+}
+
+/* Image info */
+.info {
+  color: var(--light);
+  text-align: center;
+  padding: 0 10px 10px 10px;
+}
+
+.info h3 {
+  color: var(--medium);
 }
 
 /* Form */
 form {
   background-color: var(--medium);
   border: solid 5px var(--dark);
-  border-radius: 3vw;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   color: var(--light);
   text-align: center;

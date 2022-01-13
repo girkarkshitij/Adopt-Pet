@@ -9,15 +9,17 @@ const Pet = (props) => {
   }
 
   return (
-    <Link to={`/details/${id}`} className='pet'>
-      <div className='image-container'>
-        <img src={hero} alt={name} />
-      </div>
-      <div className='info'>
-        <h1>{name}</h1>
-        <h2>{`${animal} - ${breed} - ${location}`}</h2>
-      </div>
-    </Link>
+    <div className='pet-container'>
+      <Link to={`/details/${id}`}>
+        <div>
+          <img src={hero} alt={name} />
+        </div>
+        <div className='info'>
+          <h2>{name}</h2>
+          <h3>{`${animal} - ${breed} - ${location}`}</h3>
+        </div>
+      </Link>
+    </div>
   );
 };
 
