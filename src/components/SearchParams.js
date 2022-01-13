@@ -50,7 +50,7 @@ const SearchParams = () => {
             onChange={(e) => setAnimal(e.target.value)}
             onBlur={(e) => setAnimal(e.target.value)}
           >
-            <option value='' selected disabled hidden>
+            <option value='' defaultValue={''} disabled hidden>
               Choose an animal
             </option>
             {ANIMALS.map((animal) => (
@@ -68,7 +68,7 @@ const SearchParams = () => {
             onChange={(e) => setBreed(e.target.value)}
             onBlur={(e) => setBreed(e.target.value)}
           >
-            <option value='' selected disabled hidden>
+            <option value='' defaultValue={''} disabled hidden>
               Choose a breed
             </option>
             {breeds.map((breed) => (
